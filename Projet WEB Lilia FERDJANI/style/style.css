@@ -1,0 +1,236 @@
+/* Palettes de couleurs */
+:root {
+    --primary-color: rgb(245, 245, 245);  
+    --secondary-color: #5c5c5c;  
+    --accent-color: #8a857f; 
+    --text-color: #414042;  
+    --background-color: white;
+}
+
+/* Corps de la page */
+body {
+    font-family: "Bellota Text", sans-serif;
+    font-style: normal;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* En-tête */
+header {
+    height: 9vh;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+header img {
+    max-height: 80px;
+    margin: 0px 20px;
+    border-color: black;
+}
+
+header nav ul {
+    list-style: none;
+    float: right;
+    display: flex;
+    font-size: 1.4rem;
+}
+
+header nav ul li {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-family: "Gurajada", sans-serif;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+
+.active {
+    background: white;
+    color: black;
+}
+
+header nav ul li:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+}
+
+/* Sections principales */
+.section {
+    padding: 20px 50px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 12px;
+    background-color: var(--background-color);
+}
+
+.sectionimg {
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin : 10px;
+    
+}
+
+.sectionimg1 {
+    font-size: 1.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titre1 {
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section h1,
+.section h2 {
+    color: var(--secondary-color);
+    font-family: "Bellota Text", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.section p {
+    font-size: 15px;
+    color: var(--text-color);
+    font-family: "Bellota Text", sans-serif;
+    margin: 5px;
+    padding-top: 4px;
+}
+
+.section input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.section .btn {
+    padding: 10px 15px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #adadad;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid;
+}
+
+.section .btn:hover {
+    background-color: #c2c2c2;
+}
+
+.highlight {
+    background-color: rgb(177, 177, 177);
+}
+
+/* Cartes */
+.card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px; 
+    margin: 20px;
+    text-align: center;
+    width: calc(24% - 10px); 
+    box-sizing: border-box;
+}
+
+.namecard {
+    text-align: center;
+}
+
+.card img {
+   
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.card h3 {
+    font-size: 1.7rem; 
+    color: var(--secondary-color);
+    margin-top: 0px; 
+    font-family: "Gurajada", sans-serif;
+}
+
+.card p {
+    color: var(--text-color);
+    margin: 5px 0; 
+    font-family: "Gurajada", sans-serif;
+}
+
+/* Pied de page */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 5px 40px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer-section {
+    flex: 1;
+    margin: 0 0px;
+}
+
+footer .footer-section h3 {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    margin: 15px;
+    font-family: "Bellota Text", sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: black;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin: 0px 0;
+}
+
+footer ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: "Bellota Text", sans-serif;
+    font-size: 14px;
+    margin: 40px;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
